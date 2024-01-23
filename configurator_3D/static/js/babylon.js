@@ -10,6 +10,14 @@ $(window).on('load', function() {
         camera.setTarget(BABYLON.Vector3.Zero());
         // This attaches the camera to the canvas
         camera.attachControl(canvas, true);
+        camera.keysUpward.push(69); //increase elevation
+        camera.keysDownward.push(81); //decrease elevation
+        camera.keysUp.push(87); //forwards 
+        camera.keysDown.push(83); //backwards
+        camera.keysLeft.push(65);
+        camera.keysRight.push(68);
+
+
         // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
         const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
         // Default intensity is 1. Let's dim the light a small amount
@@ -22,6 +30,7 @@ $(window).on('load', function() {
         const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
         return scene;
     };
+
     const scene = createScene(); //Call the createScene function
     // Register a render loop to repeatedly render the scene
     engine.runRenderLoop(function () {

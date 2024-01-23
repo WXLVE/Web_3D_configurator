@@ -1,5 +1,8 @@
 
-
+body, html {
+  height: auto;
+  height: 100%;
+}
 
 .typing-text {
   /* width: 22ch; */
