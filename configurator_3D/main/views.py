@@ -10,3 +10,8 @@ def home(request):
 def about(request):
 
     return render(request, "main/about.html", {})
+
+
+def babylon_page(request):
+
+    return render(request, "main/main.html", {})
