@@ -1,2 +1,58 @@
+{% extends 'main/base.html' %}
 {% comment %} """"This Page will be used for the Babylon Tests""" {% endcomment %}
 {% comment %} Seeeeee you SOON ;) {% endcomment %}
+
+
+{% load static %}
+
+    {% block extra_scripts %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+        <script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+        <script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+        <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+        {% comment %} <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script> {% endcomment %}
+        {% comment %} <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script> {% endcomment %}
+        {% comment %} <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script> {% endcomment %}
+
+
+
+        <script src="{% static 'js/babylon.js' %}"></script> 
+
+    {% endblock %}
+   
+    {% block base %}
+    <div style="height: 100%;">
+        <div class="row different">
+            <div class="col-md-7">
+                <canvas style="max-height: 100%" id="renderCanvas"></canvas>
+            </div>
+            <div class="col-md-5">
+                <div style="text-align: center;">
+                    <p><strong> < Exciting Websites > <h1> <small>BY</small> WXLVE <h1/> </strong></p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block content %}
+
+    <div class = "fill_container_diff third">
+        <div class="section full-height">
+            <div class="absolute-center">
+                <div class="section">
+                    <h1> this is text</h1>
+                    <h1> for everyone, <span class="text blue">to Build</span></h1>
+                    <p> <strong>PS:</strong> beautiful text goes here </p>	
+      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+

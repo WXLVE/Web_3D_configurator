@@ -14,4 +14,4 @@ def about(request):
 
 def babylon_page(request):
 
-    return render(request, "main/main.html", {})
+    return render(request, "main/babylon.html", {})

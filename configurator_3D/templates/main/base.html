@@ -5,14 +5,13 @@
 {% include "main/header.html" %}
 
 <style type="text/css">
-a {
+    a {
     text-decoration: none;
-  }
-
+    }
 
 </style>
 
-<body class="animsition">
+<body>
 
     {% if  require_sidebar == True %}
 
@@ -25,7 +24,7 @@ a {
 
     {% endif %}
 
-
+    {% if messages %}
         <div class="mt-2" style="text-align: center;">
           {% if messages %}
               {% for message in messages %}
@@ -38,6 +37,7 @@ a {
               {% endfor %}
           {% endif %}
       </div>
+    {% endif %}
 
 
             
