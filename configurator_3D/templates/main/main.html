@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+    {% block extra_styles %}
+        <link href="{% static "css/mainpage.css" %}" rel='stylesheet'>
+    {% endblock %}
+
+  {% block base %}
+    <div class = "fill_container containers first">
+      <div class="section full-height">
+          <div class="absolute-center">
+              <div class="section">
+
+                  <span is="type-async" id="type-text"> WXLV DEVELOPMENT</span>
+                  <p><strong> < Exciting Websites By Succes > </strong></p> 
+	
+              </div>
+          </div>
+      </div>
+  </div>
+  {% comment %} <div class = "fill_container containers second">
+    <div class="section full-height">
+        <div class="absolute-center">
+            <div class="section">
+                <h1 class= "different_heading"> this is text</h1>
+                <h1 class = "different_heading"> for everyone, <span class="text blue">to Build</span></h1>
+                <p> beautiful text goes here </p>	
+
+                <div class="card">
+                    <h2>Card 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                  
+                <div class="card">
+                    <h2>Card 2</h2>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                
+                <div class="card">
+                    <h2>Card 3</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+  
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+<div class = "fill_container_diff third">
+    <div class="section full-height">
+        <div class="absolute-center">
+            <div class="section">
+                <h1> this is text</h1>
+                <h1> for everyone, <span class="text blue">to Build</span></h1>
+                <p> beautiful text goes here </p>	
+  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {% endblock %}
